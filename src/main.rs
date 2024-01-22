@@ -9,6 +9,7 @@ fn main() {
 
     println!("The secret number is: {secret_number}");
 
+
     println!("Please input your guess.");
 
     let mut guess = String::new();
@@ -17,5 +18,7 @@ fn main() {
         .read_line(&mut guess)
         .expect("Failed to read line");
 
+    let guess: u32 = guess.trim().parse().expect("Please type a number!");
     
+    println!("You guessed: {guess}");
 }
