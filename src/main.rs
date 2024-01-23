@@ -21,7 +21,7 @@ fn main() {
         let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => {
-                println!("Just numbers are allowed!");
+                println!("Just integers numbers are allowed!");
                 continue;
             },
         };
